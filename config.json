@@ -1,0 +1,98 @@
+{
+	"name": "demo",
+	"version": "0.0.1",
+	"author": "Terje",
+    "menus": {},
+    "renderer": {
+        "relatedPostsNumber": 5,
+        "includeFeaturedInPosts": true,
+        "tagsIncludeFeaturedInPosts": true,
+        "authorsIncludeFeaturedInPosts": true,
+        "featuredPostsNumber": -1,
+        "tagsFeaturedPostsNumber": 0,
+        "authorsFeaturedPostsNumber": 0,      
+        "includeHandlebarsInHelpers": true,
+        "create404page": false,
+        "nameFor404page": "404.html"
+    },
+    "supportedFeatures": {
+        "authorImages": true,
+        "blockEditor": true,
+        "errorPage": true,
+        "searchPage": true,
+        "tagImages": true,
+        "tagsList": true
+    },
+    "menus": {   
+    },
+    "postTemplates": {
+	},
+	"extensions": {
+        "postEditorConfigOverride": true,
+        "postEditorCustomScript": true
+ 	},
+    "config": [
+        {
+            "name": "logo",
+            "label": "Website logo",
+            "value": "",
+            "type": "media",
+            "upload": true
+        },
+        {
+            "name": "postsPerPage",
+            "label": "Posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "tagsPostsPerPage",
+            "label": "Tags posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "authorsPostsPerPage",
+            "label": "Authors posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "excerptLength",
+            "label": "Excerpt length",
+            "value": 30,
+            "type": "number"
+        }
+    ],
+    "customConfig": [
+    	{
+            "name": "backgroundPicture",
+            "label": "Upload background image",
+            "group": "Background",
+            "note": "",
+            "value": "",
+            "type": "upload",
+            "upload": true
+        },
+        {
+            "name": "backgroundPictureOpacity",
+            "label": "Opacity",
+            "group": "Background",
+            "note": "The background image opacity",
+            "value": "0.15",
+            "type": "range",
+            "min": 0,
+            "max": 1,
+            "step": 0.05
+        }
+    ],
+    "postConfig": [],
+    "files": {
+        "ignoreAssets": [
+            "scss",
+            ".DS_Store"
+        ],
+        "assetsPath": "assets",
+        "partialsPath": "partials"
+    }
+}
