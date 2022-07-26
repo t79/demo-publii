@@ -1,2 +1,37 @@
 {{> head}}
+
+{{#each posts}}
+
+<article>
+<header>
+
+<h2><a href="{{url}}">{{{title}}}</a></h2>
+
+<p>
+Posted <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">{{date createdAt}}</time>
+</p>
+
+{{#if tags}}
+{{#each tags}}<a href="{{url}}">{{name}}</a>{{/each}}
+{{/if}}
+
+</header>
+
+<main>
+
+{{#if hasCustomExcerpt}}
+ {{{ excerpt }}}
+{{else}}
+{{{ text }}}
+{{/if}}
+
+{{#if hasCustomExcerpt}}
+<a href="{{url}}">... continue to see the full post.</a>
+{{/if}}
+</main>
+
+</article>
+
+{{/each}}
+
 {{> footer}}
