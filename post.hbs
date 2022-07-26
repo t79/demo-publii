@@ -1,13 +1,12 @@
 {{> head}}
 
-<main id="content-main-column">
+
 
 {{#post}}
 
 <article>
 <header>
 <h1>{{{title}}}</h1>
-
 <p>Posted <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">{{date createdAt}}</time>
 {{#if tags}}{{#each tags}}<a href="{{url}}">{{name}}</a>{{/each}}{{/if}}</p>
 </header>
@@ -20,8 +19,7 @@
 
 </article>
 
-{{/post}}
 
-</main> <!-- End of content-main-column --> 
+{{/post}}
 
 {{> footer}}
