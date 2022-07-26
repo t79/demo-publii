@@ -7,6 +7,7 @@
 <article>
 <header>
 <h1>{{{title}}}</h1>
+
 <p>Posted <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">{{date createdAt}}</time>
 {{#if tags}}{{#each tags}}<a href="{{url}}">{{name}}</a>{{/each}}{{/if}}</p>
 </header>
@@ -19,6 +20,21 @@
 
 </article>
 
+        {{#each (nextPreviousPostByTag this @website.contentStructure.tags) }}
+ 			{{#if notEmpty}}
+                
+                {{#each next}}
+                    {{#each tags}} {{this}} {{/each}}
+                    <a href="{{url}}">{{title}}</a>
+                {{/each}}
+
+                {{#each prev}}
+                    {{#each tags}} {{this}} {{/each}}
+                    <a href="{{url}}">{{title}}</a>
+                {{/each}}
+
+            {{/if}}
+ 		{{/each}}
 
 {{/post}}
 
