@@ -1,3 +1,86 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    html {
+        font-size: 14.3px;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    html {
+        font-size: 14.6px;
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 710px) {
+    html {
+        font-size: 15.7px;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    html {
+        font-size: 16.2px;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    html {
+        font-size: 16.5px;
+    }
+}
+
+@media only screen and (min-width: 1430px) {
+    html {
+        font-size: 16.75px;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
 
 body {
     width: 100%;
@@ -11,3 +94,29 @@ body {
 /*   			display: block; */
       margin: auto auto;
   }
+
+
+#content-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#content-block {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    width: min(calc(30em + 25vw), 98vw);
+    border-radius: 0.3em;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 1em 2.5em 1em 2.5em;
+    overflow: hidden;
+    font-size: 1.2em;
+}
