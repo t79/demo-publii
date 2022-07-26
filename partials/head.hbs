@@ -15,14 +15,14 @@
 	<style>
         body {
             background-image: url("{{@config.custom.backgroundPicture}}");
+            opacity: {{@config.custom.backgroundPictureOpacity}};
         }
     </style>
 	
 	
 	<!-- Title for the page -->
 	{{#if title}}
-		<title>{{title}}</title>
-		{{else}}
+		<title>{{title}}</title>		{{else}}
 		<title>{{@website.name}}</title>
 	{{/if}}
 	
